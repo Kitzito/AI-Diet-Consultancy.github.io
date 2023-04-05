@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Godfada">
+    <meta name="keyword" content="Diet Consultant">
+    <meta name="Robot" content="Index,Follow">
+    <meta name="description" content="This is a chatbox">
+    <meta name="googlebot" content="translate">
+    <meta name="revised" content="chatbox, 15/7/22">
+    <meta name="coverage" content="worldwide">
+    <meta name="target" content="all">
+    <meta name="distribution" content="global">
+    <meta name="classification" content="Business">
+    <meta name="reply-to" content="mnkitzito@gmail.com">
+    <link rel="icon" href="mk.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <title>AID Contact Us page</title>
+</head>
+<body>
+
+    <section  class="sub-header">
+        <nav>
+            <a href="#" id="light-mode" onclick="ToggleDarkLight1()"><img src="Android 616.jpg" alt="logo" onclick="indexMode()" class="mode"></a>
+            <a href="#" onclick="ToggleDarkLight2()" class="bg--mode--dark" id="dark-mode"><img src="Android 838.jpg" alt="logo" onclick="indexMode()" class="mode"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                <!---    <li><a href="bmi.html">BMI</a></li> -->
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1><i>Contact Us</i></h1>
+    </section>
+
+   <!-----------------CONTACT US CONTENT------------->
+   <section class="contact-us">
+
+        <div class="contactUs">
+            <div class="title">
+                <h2>Connect With Us</h2>
+            </div>
+                
+                <div class="b-box">
+
+                    <!-------Contact Box------>
+                    <div class="c-contact form">
+                        <h3>Write To Us</h3>
+                        <form action="contact.php" method="post">
+                            <div class="formbox">
+                                <div class="row50">
+                                    <div class="inputbox">
+                                        <label for="firstname"></label>
+                                        <input type="text" placeholder="First Name" name="first_name">
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="lastname"></label>
+                                        <input type="text" placeholder="Last Name" name="last_name">
+                                    </div>
+                                </div>
+
+                                <div class="row50">
+                                    <div class="inputbox">
+                                        <label for="emailaddress"></label>
+                                        <input type="email" placeholder="Email Address" name="email_address">
+                                    </div>
+                                    <div class="inputbox">
+                                        <label for="phonenumber"></label>
+                                        <input type="tel" placeholder="Contact" name="phone_number">
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="inputbox">
+                                        <label for="message"></label>
+                                        <textarea placeholder="Write Message..." name="message_content"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row100">
+                                    <div class="inputbox">
+                                        <input type="submit" value="send" name="save">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-------Info Box----->
+                    <div class="c-contact info">
+                        <h3>Contact Info</h3>
+                        <div class="infobox">
+                            <div class="tron">
+                                <i class="fa fa-location"></i>
+                                <p>LMU Molyko Buea</p>
+                            </div>
+
+                            <div class="tron">
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:mnkitzito@gmail.com">mnkitzito@gmail.com</a>
+                            </div>
+
+                            <div class="tron">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+237682726566">+237682726566</a>
+                            </div>
+                        </div>
+
+                        <ul class="sci">
+                            <li><a href="#"> <i class="fas fa-facebook"></i> </a></li>
+                            <li><a href="#"> <i class="fas fa-instagram"></i> </a></li>
+                            <li><a href="#"> <i class="fas fa-twitter"></i> </a></li>
+                            <li><a href="#"> <i class="fas fa-linkedin"></i> </a></li>
+                        </ul>
+                    </div>
+
+                    <!---------Map Box------>
+                    <div class="c-contact map">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63669.31068849966!2d9.231421818003202!3d4.154985329953656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613259651819a3%3A0x754210aa92e62bff!2sBuea!5e0!3m2!1sen!2scm!4v1669040637332!5m2!1sen!2scm" 
+                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+
+        </div>
+
+   </section>
+
+
+
+    <!---------------------FOOTER------------------>
+    <section class="footer">
+        <h4><i>Follow Us</i></h4>
+        <p>For More info and to know more about us,
+             follow us on Facebook, Linkdln, Instagram, Connectyu to
+            <br>get first hand information and to stay updated on offers and bonuses.
+            </p>
+            <div class="icons">
+                <img src="facebook.png" alt="facebook">
+                <img src="linkdln.png" alt="linkdln">
+                <img src="instagram.png" alt="instagram">
+                <img src="connectyu.png" alt="connectyu">
+            </div>
+             <p><i>This page is Proudly sponsored by <br> Bill'sUpdates <i class="fa fa-heart"></i> and Landmark Technologies <i class="fa fa-heart"></i></i></p>
+    </section>
+
+    <!------------------------CUBE--------------------->
+    <p id="ad"><i>Adverts</i></p>
+    <section class="cube-course">
+        <div class="cube">
+        
+            <div class="box box1">
+                <img src="Android 616.jpg" alt="image1">
+            </div>
+            <div class="box box2">
+                <img src="unsplash001.jpg" alt="image2">
+            </div>
+            <div class="box box3">
+                <img src="unsplash002.jpg" alt="image3">
+            </div>
+            <div class="box box4">
+                <img src="unsplash003.jpg" alt="image4">
+            </div>
+            <div class="box box5">
+                <img src="unsplash004.jpg" alt="image5">
+            </div>
+            <div class="box box6">
+                <img src="Android 838.jpg" alt="image6">
+            </div>
+        
+        </div>
+    </section>
+<!-------------------------JAVASCRIPT ION ICONS------------------------>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<!--------------JAVASCRIPT FOR TOGGLE MENU--------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+<!-----------------Mode Swap JS Script----------------->
+            <script>
+                function indexMode(){
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+            
+<script>
+    const darkMode = document.querySelector("#dark-mode");
+    const lightMode = document.querySelector("#light-mode");
+
+    const ToggleDarkLight1 = ()=>{
+        lightMode.style.display = "none";
+        darkMode.style.display = "block";
+    }
+    const ToggleDarkLight2 = ()=>{
+        lightMode.style.display = "block";
+        darkMode.style.display = "none";
+    }
+</script>
+
+</body>
+</html>    

@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1676313190 source:c:\users\kz\desktop\c++ codex\alpha\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<conio.h>
+	<ctime>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	<istream>
+	<stdlib.h>
+	<string.h>
+	"learner.h"
+
+1676297192 c:\users\kz\desktop\c++ codex\alpha\learner.h
+
+1677523090 source:c:\users\kz\desktop\c++ codex\ai diet consultancy\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<conio.h>
+	<ctime>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	<istream>
+	<stdlib.h>
+	<string.h>
+	"learner.h"
+
+1676297192 c:\users\kz\desktop\c++ codex\ai diet consultancy\learner.h
+
+1680414128 source:c:\users\kz\desktop\internship project\ai diet consultancy\main.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<conio.h>
+	<ctime>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<iostream>
+	<istream>
+	<stdlib.h>
+	<string.h>
+	"learner.h"
+
+1676297192 c:\users\kz\desktop\internship project\ai diet consultancy\learner.h
+

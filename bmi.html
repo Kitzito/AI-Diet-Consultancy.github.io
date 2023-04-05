@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Godfada">
+    <meta name="keyword" content="Diet Consultant">
+    <meta name="Robot" content="Index,Follow">
+    <meta name="description" content="This is a chatbox">
+    <meta name="googlebot" content="translate">
+    <meta name="revised" content="chatbox, 15/7/22">
+    <meta name="coverage" content="worldwide">
+    <meta name="target" content="all">
+    <meta name="distribution" content="global">
+    <meta name="classification" content="Business">
+    <meta name="reply-to" content="mnkitzito@gmail.com">
+    <link rel="icon" href="mk.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <title>AID About page</title>
+</head>
+<body>
+
+    <section  class="sub-header">
+        <nav>
+            <a href="#" id="light-mode" onclick="ToggleDarkLight1()"><img src="Android 616.jpg" alt="logo" onclick="indexMode()" class="mode"></a>
+            <a href="#" onclick="ToggleDarkLight2()" class="bg--mode--dark" id="dark-mode"><img src="Android 838.jpg" alt="logo" onclick="indexMode()" class="mode"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1><i>Body Mass Index</i></h1>
+    </section>
+
+   <!-----------------BMI CONTENT------------->
+<section class="bmic">
+    <div class="calculate">
+        <h2>BMI Calculator</h2>
+        <p class="text">Height:</p>
+        <input type="text" id="h">
+        <p class="text">Weight:</p>
+        <input type="text" id="w">
+        <p id="result"></p>
+        <button id="btnn" onclick="BMI()">Calculate</button>
+        <p id="info">Enter Height in [cm] and weight in [kg]</p>
+    </div>
+</section>
+
+    <!---------------------FOOTER------------------>
+    <section class="footer">
+        <h4><i>Follow Us</i></h4>
+        <p>For More info and to know more about us,
+             follow us on Facebook, Linkdln, Instagram, Connectyu to
+            <br>get first hand information and to stay updated on offers and bonuses.
+            </p>
+            <div class="icons">
+                <img src="facebook.png" alt="facebook">
+                <img src="linkdln.png" alt="linkdln">
+                <img src="instagram.png" alt="instagram">
+                <img src="connectyu.png" alt="connectyu">
+            </div>
+            <p><i>This page is Proudly sponsored by <br> Bill'sUpdates <i class="fa fa-heart"></i> and Landmark Technologies <i class="fa fa-heart"></i></i></p>
+    </section>
+
+    <!------------------------CUBE--------------------->
+    <p id="ad"><i>Adverts</i></p>
+    <section class="cube-course">
+        <div class="cube">
+        
+            <div class="box box1">
+                <img src="Android 616.jpg" alt="image1">
+            </div>
+            <div class="box box2">
+                <img src="unsplash001.jpg" alt="image2">
+            </div>
+            <div class="box box3">
+                <img src="unsplash002.jpg" alt="image3">
+            </div>
+            <div class="box box4">
+                <img src="unsplash003.jpg" alt="image4">
+            </div>
+            <div class="box box5">
+                <img src="unsplash004.jpg" alt="image5">
+            </div>
+            <div class="box box6">
+                <img src="Android 838.jpg" alt="image6">
+            </div>
+        
+        </div>
+    </section>
+
+<!-------------------------JAVASCRIPT ION ICONS------------------------>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+<!--------------JAVASCRIPT FOR TOGGLE MENU--------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+            <!---------Mode Swap JS Script--------->
+            <script>
+                function indexMode(){
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script>
+            
+<script>
+    const darkMode = document.querySelector("#dark-mode");
+    const lightMode = document.querySelector("#light-mode");
+
+    const ToggleDarkLight1 = ()=>{
+        lightMode.style.display = "none";
+        darkMode.style.display = "block";
+    }
+    const ToggleDarkLight2 = ()=>{
+        lightMode.style.display = "block";
+        darkMode.style.display = "none";
+    }
+</script>
+
+<!---------------------JAVASCRIPT FOR BMI------------------>
+<script type="text/javascript">
+    function BMI(){
+        var h=document.getElementById('h').value;
+        var w=document.getElementById('w').value;
+        var bmi=w/(h/100*h/100);
+        var bmio=(bmi.toFixed(2));
+
+        document.getElementById("result").innerHTML="Your BMI is: " + bmio;
+    }
+</script>
+</body>
+</html>    
